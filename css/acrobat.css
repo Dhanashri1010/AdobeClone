@@ -1,0 +1,238 @@
+/* ===================================================
+   ADOBE ACROBAT PAGE SPECIFIC CSS
+   =================================================== */
+
+.acrobat-hero {
+    background: linear-gradient(135deg, #021a30 0%, #0a3a60 50%, #0e4c7d 100%);
+    color: white;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.acrobat-hero h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.acrobat-hero p {
+    font-size: 18px;
+    color: #e5e5e7;
+    margin-bottom: 30px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+.acrobat-hero .hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--adobe-blue);
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(20, 115, 230, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.acrobat-hero .hero-btn:hover {
+    background: #1062c2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 115, 230, 0.4);
+}
+
+.acrobat-hero img {
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Tools Section */
+.ac-tools-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 650px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.ac-tool-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 40px;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+    text-align: center;
+    cursor: pointer;
+}
+
+.ac-tool-card:hover {
+    transform: translateY(-8px);
+    background: #ffffff;
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(20, 115, 230, 0.25);
+}
+
+.ac-tool-card span {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.ac-tool-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.ac-tool-card p {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* AI Assistant */
+.ai-assistant-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.ai-assistant-card {
+    background: white;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-premium);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.ai-assistant-image {
+    flex: 1.2;
+    height: 400px;
+    overflow: hidden;
+}
+
+.ai-assistant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.ai-assistant-card:hover .ai-assistant-image img {
+    transform: scale(1.02);
+}
+
+.ai-assistant-content {
+    flex: 1;
+    padding: 50px;
+}
+
+.ai-assistant-content span {
+    color: var(--adobe-blue);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ai-assistant-content h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.ai-assistant-content p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.ai-assistant-btn {
+    padding: 10px 24px;
+    border-radius: 20px;
+    border: 1.5px solid var(--text-primary);
+    background: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.ai-assistant-btn:hover {
+    background: var(--text-primary);
+    color: white;
+}
+
+/* CTA */
+.ac-cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0a3a60 0%, #1473e6 100%);
+    color: white;
+    text-align: center;
+}
+
+.ac-cta-section h2 {
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.ac-cta-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.ac-cta-btn {
+    padding: 12px 35px;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    color: #0a3a60;
+    font-weight: 700;
+    font-size: 15px;
+    transition: var(--transition-smooth);
+}
+
+.ac-cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+    .ai-assistant-card {
+        flex-direction: column;
+    }
+    .ai-assistant-image {
+        height: 250px;
+        width: 100%;
+    }
+    .ai-assistant-content {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,193 @@
+/* ===================================================
+   ADOBE BUSINESS PAGE SPECIFIC CSS
+   =================================================== */
+
+.business-hero {
+    background: linear-gradient(135deg, #09090c 0%, #13141a 50%, #1e202b 100%);
+    color: white;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.business-hero h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.business-hero p {
+    font-size: 18px;
+    color: #a1a1a6;
+    margin-bottom: 30px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+.business-hero .hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--adobe-blue);
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(20, 115, 230, 0.35);
+    transition: var(--transition-smooth);
+}
+
+.business-hero .hero-btn:hover {
+    background: #1062c2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 115, 230, 0.45);
+}
+
+.business-hero img {
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Solutions Section */
+.solutions-section-biz {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 650px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.biz-solution-card {
+    background: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+    height: 100%;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.biz-solution-card:hover {
+    transform: translateY(-8px);
+    background: #ffffff;
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(20, 115, 230, 0.25);
+}
+
+.biz-solution-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.biz-solution-card p {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Contact Sales Form Section */
+.contact-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.contact-card {
+    background: white;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-premium);
+    padding: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-card h2 {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.form-group-custom {
+    margin-bottom: 25px;
+}
+
+.form-group-custom label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group-custom input, 
+.form-group-custom select, 
+.form-group-custom textarea {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border-color);
+    font-size: 14.5px;
+    background: #fdfdfd;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.form-group-custom input:focus, 
+.form-group-custom select:focus, 
+.form-group-custom textarea:focus {
+    border-color: var(--adobe-blue);
+    background: white;
+    box-shadow: 0 0 10px rgba(20, 115, 230, 0.15);
+}
+
+.submit-btn-biz {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: var(--adobe-blue);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(20, 115, 230, 0.3);
+    transition: var(--transition-smooth);
+    margin-top: 10px;
+}
+
+.submit-btn-biz:hover {
+    background: #1062c2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 115, 230, 0.4);
+}
+
+@media(max-width: 768px) {
+    .contact-card {
+        padding: 30px 20px;
+    }
+}

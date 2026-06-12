@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Plans & Pricing</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plans.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg adobe-navbar">
+        <div class="container-fluid">
+            <a href="index.html" class="adobe-logo-container">
+                <svg width="24" height="21" viewBox="0 0 91 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M56.9686 0H90.4318V80L56.9686 0Z" fill="#FA0F00"/>
+                    <path d="M33.4632 0H0V80L33.4632 0Z" fill="#FA0F00"/>
+                    <path d="M45.1821 29.4668L66.5199 80.0002H52.5657L46.1982 63.9461H30.6182L45.1821 29.4668Z" fill="#FA0F00"/>
+                </svg>
+                <span>Adobe</span>
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="productsBtn">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="useCasesBtn">Use Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="solutionsBtn">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="quickActionsBtn">Quick Actions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="learnSupportBtn">Learn & Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="plans.html" class="nav-link">Plans</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="apps-btn" title="Apps">
+                        <i class="bi bi-grid-3x3-gap-fill"></i>
+                    </button>
+                    <a href="signin.html" class="signin-btn">Sign In</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- ================= APPS POPUP ================= -->
+    <div class="apps-popup">
+        <h4>Adobe Web Apps</h4>
+        <div class="apps-grid">
+            <div class="app-item" onclick="window.location.href='creative-cloud.html'">Express</div>
+            <div class="app-item" onclick="window.location.href='firefly.html'">Firefly AI</div>
+            <div class="app-item" onclick="window.location.href='acrobat.html'">Acrobat</div>
+            <div class="app-item" onclick="window.location.href='photoshop.html'">Photoshop</div>
+            <div class="app-item" onclick="window.location.href='creative-cloud.html'">Illustrator</div>
+            <div class="app-item" onclick="window.location.href='creative-cloud.html'">Premiere Pro</div>
+            <div class="app-item" onclick="window.location.href='plans.html'">Plans</div>
+            <div class="app-item" onclick="window.location.href='products.html'">All Apps</div>
+            <div class="app-item" onclick="window.location.href='support.html'">Support</div>
+        </div>
+    </div>
+
+    <!-- ================= DROPDOWNS ================= -->
+    <!-- Products Mega Menu -->
+    <div class="products-mega-menu">
+        <div class="menu-left">
+            <button class="menu-tab active" data-target="featured">Featured</button>
+            <button class="menu-tab" data-target="content">Content Creation</button>
+            <button class="menu-tab" data-target="pdf">Acrobat & PDF</button>
+            <button class="menu-tab" data-target="photo">Photography</button>
+            <button class="menu-tab" data-target="video">Video</button>
+            <button class="menu-tab" data-target="design">Design</button>
+            <button class="menu-tab" data-target="marketing">Marketing & Data</button>
+            <a href="products.html" class="all-products-link">All Products ›</a>
+        </div>
+        <div class="menu-right">
+            <div class="cards-wrapper">
+                <!-- Dynamically populated via jQuery scripts.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Use Cases Menu -->
+    <div class="usecases-menu">
+        <div class="usecases-grid">
+            <div class="usecase-card">
+                <span>Content Creation</span>
+                <h2>Create quickly and easily with AI models.</h2>
+                <p>Generate and edit images, video, and audio with AI.</p>
+                <a href="firefly.html">See Firefly AI ›</a>
+                <button onclick="window.location.href='creative-cloud.html'">Explore</button>
+            </div>
+            <div class="usecase-card">
+                <span>PDF & Document Essentials</span>
+                <h2>Transform PDFs to insights, content, and action.</h2>
+                <p>Edit, sign and convert PDFs.</p>
+                <a href="acrobat.html">See Acrobat ›</a>
+                <button onclick="window.location.href='acrobat.html'">Explore</button>
+            </div>
+            <div class="usecase-card">
+                <span>Students & Teachers</span>
+                <h2>Get special academic pricing on 20+ apps.</h2>
+                <p>Save over 60% on Creative Cloud.</p>
+                <a href="students.html">See student plans ›</a>
+                <button onclick="window.location.href='students.html'">Explore</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solutions Menu -->
+    <div class="solutions-menu">
+        <div class="solutions-left">
+            <div class="solution-box">
+                <h2>Organizations</h2>
+                <ul>
+                    <li onclick="window.location.href='business.html'">Small businesses</li>
+                    <li onclick="window.location.href='business.html'">Medium and large businesses</li>
+                    <li onclick="window.location.href='students.html'">Schools and universities</li>
+                    <li onclick="window.location.href='business.html'">Government</li>
+                </ul>
+                <button onclick="window.location.href='business.html'">Explore Business</button>
+            </div>
+            <div class="solution-box">
+                <h2>Industries</h2>
+                <ul>
+                    <li onclick="window.location.href='business.html'">Financial services</li>
+                    <li onclick="window.location.href='business.html'">Healthcare</li>
+                    <li onclick="window.location.href='business.html'">Retail & Consumer Goods</li>
+                    <li onclick="window.location.href='business.html'">Media & Entertainment</li>
+                </ul>
+                <button onclick="window.location.href='business.html'">See Case Studies</button>
+            </div>
+        </div>
+        <div class="solution-banner">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Adobe Experience Cloud">
+            <div class="solution-overlay">
+                <h2>Acrobat for Business</h2>
+                <button onclick="window.location.href='business.html'">Explore</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions Menu -->
+    <div class="quickactions-menu">
+        <div class="quick-card">
+            <h2>PDF Tools</h2>
+            <ul>
+                <li onclick="window.location.href='acrobat.html'">Edit PDF</li>
+                <li onclick="window.location.href='acrobat.html'">Chat with PDF</li>
+                <li onclick="window.location.href='acrobat.html'">PDF to Word</li>
+                <li onclick="window.location.href='acrobat.html'">Compress PDF</li>
+            </ul>
+            <button onclick="window.location.href='acrobat.html'">View all PDF tools</button>
+        </div>
+        <div class="quick-card">
+            <h2>Photo Tools</h2>
+            <ul>
+                <li onclick="window.location.href='photoshop.html'">Remove background</li>
+                <li onclick="window.location.href='photoshop.html'">Resize image</li>
+                <li onclick="window.location.href='photoshop.html'">Crop image</li>
+                <li onclick="window.location.href='photoshop.html'">Generative Fill</li>
+            </ul>
+            <button onclick="window.location.href='photoshop.html'">View all photo tools</button>
+        </div>
+        <div class="quick-card">
+            <h2>Video Tools</h2>
+            <ul>
+                <li onclick="window.location.href='creative-cloud.html'">Caption video</li>
+                <li onclick="window.location.href='creative-cloud.html'">Change speed</li>
+                <li onclick="window.location.href='creative-cloud.html'">Convert to GIF</li>
+                <li onclick="window.location.href='creative-cloud.html'">Merge video</li>
+            </ul>
+            <button onclick="window.location.href='creative-cloud.html'">View all video tools</button>
+        </div>
+        <div class="quick-card">
+            <h2>Generative AI</h2>
+            <ul>
+                <li onclick="window.location.href='firefly.html'">Generate AI images</li>
+                <li onclick="window.location.href='firefly.html'">Generative Fill</li>
+                <li onclick="window.location.href='firefly.html'">AI Text Effects</li>
+                <li onclick="window.location.href='firefly.html'">AI Vector Recoloring</li>
+            </ul>
+            <button onclick="window.location.href='firefly.html'">View all AI tools</button>
+        </div>
+    </div>
+
+    <!-- Learn & Support Menu -->
+    <div class="learnsupport-menu">
+        <div class="learn-card">
+            <h2>Help & Support</h2>
+            <ul>
+                <li onclick="window.location.href='support.html'">Help Center</li>
+                <li onclick="window.location.href='support.html'">Download & Install</li>
+                <li onclick="window.location.href='support.html'">Manage my Account</li>
+                <li onclick="window.location.href='support.html'">Contact Us</li>
+            </ul>
+            <button onclick="window.location.href='support.html'">Get Help</button>
+        </div>
+        <div class="learn-card">
+            <h2>Learn Tutorials</h2>
+            <ul>
+                <li onclick="window.location.href='firefly.html'">Firefly tutorials</li>
+                <li onclick="window.location.href='acrobat.html'">Acrobat tutorials</li>
+                <li onclick="window.location.href='photoshop.html'">Photoshop tutorials</li>
+                <li onclick="window.location.href='support.html'">Creative Cloud basics</li>
+            </ul>
+            <button onclick="window.location.href='support.html'">Browse Tutorials</button>
+        </div>
+        <div class="learn-card">
+            <h2>Community</h2>
+            <ul>
+                <li onclick="window.location.href='support.html'">App Communities</li>
+                <li onclick="window.location.href='support.html'">Report a bug</li>
+                <li onclick="window.location.href='support.html'">Request a feature</li>
+                <li onclick="window.location.href='support.html'">Adobe Live Events</li>
+            </ul>
+            <button onclick="window.location.href='support.html'">Join Community</button>
+        </div>
+        <div class="learn-card">
+            <h2>Developer & More</h2>
+            <ul>
+                <li onclick="window.location.href='support.html'">Adobe Developer console</li>
+                <li onclick="window.location.href='support.html'">Adobe status portal</li>
+                <li onclick="window.location.href='support.html'">Partner programs</li>
+                <li onclick="window.location.href='support.html'">Adobe Tech blog</li>
+            </ul>
+            <button onclick="window.location.href='support.html'">Developer resources</button>
+        </div>
+    </div>
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="plans-hero">
+        <div class="container text-center">
+            <h1>Plans & Pricing</h1>
+            <p>Find the perfect Adobe plan for your creative journey.</p>
+        </div>
+    </section>
+
+    <!-- ================= BILLING TOGGLE ================= -->
+    <div class="billing-toggle-container">
+        <span class="billing-label active" id="monthlyLabel">Billed monthly</span>
+        <label class="toggle-switch-custom">
+            <input type="checkbox" id="billingToggle">
+            <span class="slider-toggle"></span>
+        </label>
+        <span class="billing-label" id="annualLabel">Billed annually (Save 20%)</span>
+    </div>
+
+    <!-- ================= PRICING CARDS ================= -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="plans-grid">
+                <!-- Individual -->
+                <div class="plan-card-pricing">
+                    <div>
+                        <h3>Individual</h3>
+                        <h2 id="individualPrice">₹799 <span>/ mo</span></h2>
+                        <p id="individualSub">Billed monthly. Cancel subscription anytime.</p>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> Choose 1 Creative Cloud app</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 100GB cloud storage</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Adobe Fonts & Portfolio tools</li>
+                        </ul>
+                    </div>
+                    <button onclick="window.location.href='signin.html'">Choose Plan</button>
+                </div>
+
+                <!-- Creative Cloud All Apps -->
+                <div class="plan-card-pricing featured-plan">
+                    <div>
+                        <h3>Creative Cloud All Apps</h3>
+                        <h2 id="allAppsPrice">₹1,599 <span>/ mo</span></h2>
+                        <p id="allAppsSub">Billed monthly. Cancel subscription anytime.</p>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> 20+ creative desktop and mobile apps</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 1TB secure cloud storage</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 1,000 monthly generative AI credits</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Access to Adobe Fonts and Stock</li>
+                        </ul>
+                    </div>
+                    <button onclick="window.location.href='signin.html'">Choose Plan</button>
+                </div>
+
+                <!-- Students & Teachers -->
+                <div class="plan-card-pricing">
+                    <div>
+                        <h3>Students & Teachers</h3>
+                        <h2 id="studentPrice">₹649 <span>/ mo</span></h2>
+                        <p id="studentSub">Billed monthly. Cancel subscription anytime.</p>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> Access all 20+ apps (over 60% discount)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 1TB secure cloud storage</li>
+                            <li><i class="bi bi-check-circle-fill"></i> School email verification required</li>
+                        </ul>
+                    </div>
+                    <button onclick="window.location.href='students.html'">Get Special Rate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= COMPARISON ================= -->
+    <section class="comparison-section py-5 bg-light">
+        <div class="container" style="max-width: 1000px;">
+            <h2 class="text-center mb-5 fw-bold">Compare Plans</h2>
+            <div class="table-responsive bg-white p-4 rounded-4 shadow-sm border border-light">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th class="fw-bold border-bottom-2">Features</th>
+                            <th class="fw-bold border-bottom-2 text-center">Individual</th>
+                            <th class="fw-bold border-bottom-2 text-center text-primary">All Apps</th>
+                            <th class="fw-bold border-bottom-2 text-center">Students & Teachers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Photoshop, Illustrator, Premiere Pro</td>
+                            <td class="text-center text-muted">1 App Selected</td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Adobe Firefly Generative AI</td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Secure Cloud Storage</td>
+                            <td class="text-center">100 GB</td>
+                            <td class="text-center fw-semibold">1 TB</td>
+                            <td class="text-center">1 TB</td>
+                        </tr>
+                        <tr>
+                            <td>Premium Fonts (20,000+)</td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Collaboration & Shared Libraries</td>
+                            <td class="text-center text-muted"><i class="bi bi-dash"></i></td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                            <td class="text-center text-success fs-5"><i class="bi bi-check-circle-fill"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq-section py-5">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center mb-5 fw-bold">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush shadow-sm rounded-4 border border-light overflow-hidden" id="plansFaq">
+                <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingOne">
+                         <button class="accordion-button collapsed fw-semibold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#plansCollapseOne">
+                             Can I cancel my subscription plan anytime?
+                         </button>
+                     </h2>
+                     <div id="plansCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#plansFaq">
+                         <div class="accordion-body text-secondary lh-lg">
+                             Yes, you can cancel your subscription plan at any time through your Adobe Account page or by contacting Customer Support. If you cancel within 14 days of your initial purchase, you will receive a full refund.
+                         </div>
+                     </div>
+                </div>
+                <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingTwo">
+                         <button class="accordion-button collapsed fw-semibold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#plansCollapseTwo">
+                             Is there an academic discount for students and teachers?
+                         </button>
+                     </h2>
+                     <div id="plansCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#plansFaq">
+                         <div class="accordion-body text-secondary lh-lg">
+                             Yes! Students and teachers are eligible for over 60% savings on the Creative Cloud All Apps plan. You will need to provide an institutional email address (like .edu) or academic proof during checkout.
+                         </div>
+                     </div>
+                </div>
+                <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThree">
+                         <button class="accordion-button collapsed fw-semibold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#plansCollapseThree">
+                             What payment methods does Adobe accept?
+                         </button>
+                     </h2>
+                     <div id="plansCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#plansFaq">
+                         <div class="accordion-body text-secondary lh-lg">
+                             We accept major credit cards (Visa, MasterCard, American Express), PayPal, and direct debit in selected regions.
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section py-5 text-center text-white bg-dark">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-3">Ready to start creating?</h2>
+            <p class="text-muted mb-4 fs-5">Choose the plan that fits your needs and get immediate access to all apps.</p>
+            <button class="hero-btn px-5 py-3" onclick="window.location.href='signin.html'">Get Started</button>
+        </div>
+    </section>
+
+    <!-- ================= GLOBAL FOOTER ================= -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>For Individuals</h5>
+                    <a href="creative-cloud.html">Creative Cloud All Apps</a>
+                    <a href="photoshop.html">Photoshop</a>
+                    <a href="creative-cloud.html">Illustrator</a>
+                    <a href="creative-cloud.html">Premiere Pro</a>
+                    <a href="plans.html">Pricing Plans</a>
+                </div>
+
+                <div>
+                    <h5>For Business</h5>
+                    <a href="business.html">Experience Cloud</a>
+                    <a href="business.html">Customer Engagement</a>
+                    <a href="business.html">Content Supply Chain</a>
+                    <a href="business.html">Contact Sales</a>
+                </div>
+
+                <div>
+                    <h5>Support & Learning</h5>
+                    <a href="support.html">Help Center</a>
+                    <a href="support.html">Download & Install</a>
+                    <a href="support.html">Adobe Community</a>
+                    <a href="support.html">Tutorials & Guides</a>
+                </div>
+
+                <div>
+                    <h5>Adobe Inc.</h5>
+                    <a href="business.html">About Adobe</a>
+                    <a href="business.html">Careers</a>
+                    <a href="business.html">Newsroom</a>
+                    <a href="business.html">Trust Center</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Preferences</a>
+                    <a href="#">Do Not Sell My Info</a>
+                </div>
+                <p>&copy; 2026 Adobe Clone. All rights reserved. Made with Bootstrap & jQuery.</p>
+            </div>
+
+            <div class="adobe-big-logo">
+                Adobe
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+    <script src="js/plans.js"></script>
+
+</body>
+
+</html>

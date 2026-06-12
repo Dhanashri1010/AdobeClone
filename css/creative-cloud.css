@@ -1,0 +1,296 @@
+/* ===================================================
+   ADOBE CREATIVE CLOUD PAGE SPECIFIC CSS
+   =================================================== */
+
+.cc-hero {
+    background: linear-gradient(135deg, #090613 0%, #150b28 50%, #220e3a 100%);
+    color: white;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cc-hero h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff007b, #7b00ff, #00d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.15;
+}
+
+.cc-hero p {
+    font-size: 18px;
+    color: #e5e5e7;
+    margin-bottom: 30px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+.cc-hero .hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--adobe-blue);
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(20, 115, 230, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.cc-hero .hero-btn:hover {
+    background: #1062c2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 115, 230, 0.4);
+}
+
+.cc-hero img {
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 650px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Apps Section */
+.apps-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.app-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 35px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+    height: 100%;
+    cursor: pointer;
+}
+
+.app-card:hover {
+    transform: translateY(-8px);
+    background: #ffffff;
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(123, 0, 255, 0.2);
+}
+
+.app-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.app-icon-cc {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* App Logo Colors matching original Adobe */
+.icon-ps { background: #001e36; color: #00c8ff; border: 1.5px solid #00c8ff; }
+.icon-ai { background: #261300; color: #ff9a00; border: 1.5px solid #ff9a00; }
+.icon-pr { background: #15002b; color: #ea77ff; border: 1.5px solid #ea77ff; }
+.icon-ae { background: #16002c; color: #d199ff; border: 1.5px solid #d199ff; }
+.icon-lr { background: #001e30; color: #31a8ff; border: 1.5px solid #31a8ff; }
+.icon-xd { background: #2b0018; color: #ff2bc2; border: 1.5px solid #ff2bc2; }
+
+/* Benefits Section */
+.benefits-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-premium);
+}
+
+.benefit-card h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.benefit-card p {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Plans Section */
+.plans-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.plan-card-cc {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-premium);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition-smooth);
+}
+
+.plan-card-cc:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.plan-card-cc.featured-cc {
+    background: linear-gradient(135deg, #100a20 0%, #1e0e37 100%);
+    color: white;
+    border-color: #7b00ff;
+}
+
+.plan-card-cc.featured-cc h3, 
+.plan-card-cc.featured-cc h1, 
+.plan-card-cc.featured-cc p {
+    color: white;
+}
+
+.plan-card-cc h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.plan-card-cc h1 {
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.plan-card-cc h1 span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.plan-card-cc.featured-cc h1 span {
+    color: #a1a1a6;
+}
+
+.plan-card-cc p {
+    font-size: 14.5px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.plan-card-cc button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    background: var(--text-primary);
+    color: white;
+}
+
+.plan-card-cc button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.plan-card-cc.featured-cc button {
+    background: var(--adobe-blue);
+    color: white;
+    box-shadow: 0 4px 15px rgba(20, 115, 230, 0.3);
+}
+
+.plan-card-cc.featured-cc button:hover {
+    background: #1062c2;
+}
+
+/* Call to Action */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1473e6 0%, #7b00ff 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-btn {
+    padding: 12px 35px;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    transition: var(--transition-smooth);
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}

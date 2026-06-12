@@ -1,0 +1,236 @@
+/* ===================================================
+   ADOBE STUDENTS & TEACHERS PAGE SPECIFIC CSS
+   =================================================== */
+
+.students-hero {
+    background: linear-gradient(135deg, #100a1f 0%, #250645 50%, #3e0c6a 100%);
+    color: white;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.students-hero h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.students-hero h1 span {
+    color: #00d2ff;
+    background: linear-gradient(45deg, #00d2ff, #00c8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.students-hero p {
+    font-size: 18px;
+    color: #e5e5e7;
+    margin-bottom: 30px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+.students-hero .hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #00d2ff;
+    color: #100a1f;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 210, 255, 0.35);
+    transition: var(--transition-smooth);
+}
+
+.students-hero .hero-btn:hover {
+    background: #00b0d6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 210, 255, 0.45);
+}
+
+.students-hero img {
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Discount Highlights */
+.discount-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.discount-card {
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-premium);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.discount-image {
+    flex: 1.2;
+    height: 440px;
+    overflow: hidden;
+}
+
+.discount-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.discount-card:hover .discount-image img {
+    transform: scale(1.02);
+}
+
+.discount-content {
+    flex: 1;
+    padding: 50px;
+}
+
+.discount-content h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.discount-content h2 span {
+    color: var(--adobe-red);
+}
+
+.discount-content p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.discount-content button {
+    padding: 12px 30px;
+    background: var(--adobe-blue);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 12px rgba(20, 115, 230, 0.25);
+}
+
+.discount-content button:hover {
+    background: #1062c2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(20, 115, 230, 0.35);
+}
+
+/* Apps Included list */
+.academic-apps-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.edu-app-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.edu-app-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.edu-app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(0, 210, 255, 0.25);
+}
+
+.edu-app-card h4 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.edu-app-card p {
+    color: var(--text-secondary);
+    font-size: 13.5px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Call to Action */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #100a1f 0%, #250645 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #a1a1a6;
+}
+
+.cta-btn {
+    padding: 12px 35px;
+    border-radius: 30px;
+    border: none;
+    background: #00d2ff;
+    color: #100a1f;
+    font-weight: 700;
+    font-size: 15px;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background: #00b0d6;
+    box-shadow: 0 10px 25px rgba(0, 210, 255, 0.4);
+}
+
+@media(max-width: 992px) {
+    .discount-card {
+        flex-direction: column;
+    }
+    .discount-image {
+        height: 250px;
+        width: 100%;
+    }
+    .discount-content {
+        padding: 30px;
+    }
+    .edu-app-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 576px) {
+    .edu-app-list {
+        grid-template-columns: 1fr;
+    }
+}

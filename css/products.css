@@ -1,0 +1,282 @@
+/* ===================================================
+   ADOBE PRODUCTS PAGE SPECIFIC CSS
+   =================================================== */
+
+/* ==========================
+   BANNER SECTION
+   ========================== */
+.products-banner {
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #d7e8ff 0%, #f6d8ff 100%);
+    text-align: center;
+}
+
+.products-banner h1 {
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    line-height: 1.15;
+}
+
+.products-banner p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.banner-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ==========================
+   PRODUCT SECTION & SIDEBAR
+   ========================== */
+.all-products-section {
+    padding: 80px 25px;
+    background-color: #fafafa;
+}
+
+.products-sidebar {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    position: sticky;
+    top: 100px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.products-sidebar h6 {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.products-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.products-sidebar li {
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: var(--transition-smooth);
+}
+
+.products-sidebar li:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--text-primary);
+}
+
+.products-sidebar li.active {
+    background: var(--dark-charcoal);
+    color: white;
+}
+
+/* ==========================
+   PRODUCT GRID & CARDS
+   ========================== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 250px;
+    transition: var(--transition-smooth);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(20, 115, 230, 0.25);
+}
+
+.product-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.product-card-icon {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: white;
+}
+
+/* App-specific icon colors */
+.icon-bg-ps { background: #001e36; color: #00c8ff; border: 1.5px solid #00c8ff; }
+.icon-bg-ai { background: #261300; color: #ff9a00; border: 1.5px solid #ff9a00; }
+.icon-bg-pr { background: #15002b; color: #ea77ff; border: 1.5px solid #ea77ff; }
+.icon-bg-ac { background: #fa0f00; color: #ffffff; }
+.icon-bg-lr { background: #001e30; color: #31a8ff; border: 1.5px solid #31a8ff; }
+.icon-bg-ae { background: #15002b; color: #9999ff; border: 1.5px solid #9999ff; }
+.icon-bg-id { background: #2b0018; color: #ff3399; border: 1.5px solid #ff3399; }
+.icon-bg-xd { background: #2e001f; color: #ff61d2; border: 1.5px solid #ff61d2; }
+.icon-bg-ff { background: linear-gradient(135deg, #ff1493, #ff8c00); }
+.icon-bg-ex { background: #000000; color: #ffe600; border: 1.5px solid #ffe600; }
+.icon-bg-generic { background: #1473e6; color: white; }
+
+.product-card h5 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.product-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.buy-btn {
+    margin-top: 25px;
+    border: none;
+    background: var(--adobe-blue);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 13.5px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    align-self: flex-start;
+}
+
+.buy-btn:hover {
+    background: #1062c2;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(20, 115, 230, 0.25);
+}
+
+/* ==========================
+   SHOW MORE BUTTON
+   ========================== */
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.show-more-btn {
+    background: transparent;
+    border: 1.5px solid var(--text-primary);
+    color: var(--text-primary);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14.5px;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.show-more-btn:hover {
+    background: var(--text-primary);
+    color: white;
+}
+
+/* ==========================
+   FAQ SECTION
+   ========================== */
+.faq-section {
+    padding: 100px 20px;
+    background: white;
+}
+
+.faq-section h2 {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 25px 10px;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: white;
+    color: var(--adobe-blue);
+    box-shadow: none;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+   ========================== */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products-sidebar {
+        margin-bottom: 30px;
+        position: relative;
+        top: 0;
+    }
+    .products-banner h1 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    .products-banner h1 {
+        font-size: 32px;
+    }
+    .products-banner p {
+        font-size: 16px;
+    }
+    .banner-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

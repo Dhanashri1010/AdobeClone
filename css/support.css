@@ -1,0 +1,164 @@
+/* ===================================================
+   ADOBE SUPPORT PAGE SPECIFIC CSS
+   =================================================== */
+
+.support-hero {
+    background: linear-gradient(135deg, #0a1b32 0%, #153b6a 50%, #205c9e 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+}
+
+.support-hero h1 {
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.support-hero p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.support-search {
+    max-width: 600px;
+    margin: 35px auto 0;
+    position: relative;
+}
+
+.support-search input {
+    width: 100%;
+    padding: 16px 25px 16px 55px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    color: var(--text-primary);
+    background: #ffffff;
+    transition: var(--transition-smooth);
+}
+
+.support-search input:focus {
+    box-shadow: 0 12px 35px rgba(20, 115, 230, 0.35);
+}
+
+.support-search i {
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8e8e93;
+    font-size: 20px;
+}
+
+/* Category Grid */
+.support-grid-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 650px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.support-card-custom {
+    background: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px 30px;
+    height: 100%;
+    transition: var(--transition-smooth);
+    text-align: center;
+    cursor: pointer;
+}
+
+.support-card-custom:hover {
+    transform: translateY(-8px);
+    background: #ffffff;
+    box-shadow: var(--shadow-premium);
+    border-color: rgba(20, 115, 230, 0.25);
+}
+
+.support-card-custom i {
+    font-size: 40px;
+    color: var(--adobe-blue);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.support-card-custom h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.support-card-custom p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* FAQs */
+.faq-section {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: 1px solid var(--border-color);
+    border-radius: 16px !important;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    transition: var(--transition-smooth);
+}
+
+.accordion-item:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+.accordion-button {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-primary);
+    padding: 22px 25px;
+    background: white !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--adobe-blue);
+}
+
+.accordion-body {
+    padding: 25px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 14.5px;
+    border-top: 1px solid var(--border-color);
+}
