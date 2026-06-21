@@ -20,8 +20,9 @@
 <body>
 
     <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg adobe-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top adobe-navbar py-2 px-4">
         <div class="container-fluid">
+            <!-- Brand Logo -->
             <a href="index.html" class="adobe-logo-container">
                 <svg width="24" height="21" viewBox="0 0 91 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M56.9686 0H90.4318V80L56.9686 0Z" fill="#FA0F00"/>
@@ -31,229 +32,90 @@
                 <span>Adobe</span>
             </a>
 
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarContent"
-                aria-controls="navbarContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" id="productsBtn">Products</a>
+                    <!-- Products Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="creative-cloud.html">Creative Cloud All Apps</a></li>
+                            <li><a class="dropdown-item" href="photoshop.html">Photoshop</a></li>
+                            <li><a class="dropdown-item" href="firefly.html">Adobe Firefly</a></li>
+                            <li><a class="dropdown-item" href="acrobat.html">Acrobat Pro</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" id="useCasesBtn">Use Cases</a>
+
+                    <!-- Use Cases Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="useCasesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Use Cases
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
+                            <li><a class="dropdown-item" href="firefly.html">Content Creation</a></li>
+                            <li><a class="dropdown-item" href="acrobat.html">PDF & Document Essentials</a></li>
+                            <li><a class="dropdown-item" href="students.html">Students & Teachers</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" id="solutionsBtn">Solutions</a>
+
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                            <li><a class="dropdown-item" href="business.html">Small & Medium Businesses</a></li>
+                            <li><a class="dropdown-item" href="business.html">Enterprise Solutions</a></li>
+                            <li><a class="dropdown-item" href="students.html">Schools & Universities</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" id="quickActionsBtn">Quick Actions</a>
+
+                    <!-- Quick Actions Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="quickActionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Quick Actions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="quickActionsDropdown">
+                            <li><a class="dropdown-item" href="acrobat.html">PDF Tools</a></li>
+                            <li><a class="dropdown-item" href="photoshop.html">Photo & Image Tools</a></li>
+                            <li><a class="dropdown-item" href="creative-cloud.html">Video Editing Tools</a></li>
+                            <li><a class="dropdown-item" href="firefly.html">Generative AI Tools</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" id="learnSupportBtn">Learn & Support</a>
+
+                    <!-- Learn & Support Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="learnSupportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Learn & Support
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learnSupportDropdown">
+                            <li><a class="dropdown-item" href="support.html">Help Center</a></li>
+                            <li><a class="dropdown-item" href="support.html">Tutorials & Guides</a></li>
+                            <li><a class="dropdown-item" href="support.html">Community Forum</a></li>
+                        </ul>
                     </li>
+
+                    <!-- Plans Direct Link -->
                     <li class="nav-item">
-                        <a href="plans.html" class="nav-link">Plans</a>
+                        <a class="nav-link" href="plans.html">Plans</a>
                     </li>
                 </ul>
+
+                <!-- Right-side Buttons -->
                 <div class="d-flex align-items-center gap-3">
-                    <button class="apps-btn" title="Apps">
-                        <i class="bi bi-grid-3x3-gap-fill"></i>
-                    </button>
                     <a href="signin.html" class="signin-btn">Sign In</a>
                 </div>
             </div>
         </div>
-
-    <!-- ================= APPS POPUP ================= -->
-    <div class="apps-popup">
-        <h4>Adobe Web Apps</h4>
-        <div class="apps-grid">
-            <div class="app-item" onclick="window.location.href='creative-cloud.html'">Express</div>
-            <div class="app-item" onclick="window.location.href='firefly.html'">Firefly AI</div>
-            <div class="app-item" onclick="window.location.href='acrobat.html'">Acrobat</div>
-            <div class="app-item" onclick="window.location.href='photoshop.html'">Photoshop</div>
-            <div class="app-item" onclick="window.location.href='creative-cloud.html'">Illustrator</div>
-            <div class="app-item" onclick="window.location.href='creative-cloud.html'">Premiere Pro</div>
-            <div class="app-item" onclick="window.location.href='plans.html'">Plans</div>
-            <div class="app-item" onclick="window.location.href='products.html'">All Apps</div>
-            <div class="app-item" onclick="window.location.href='support.html'">Support</div>
-        </div>
-    </div>
-
-    <!-- ================= DROPDOWNS ================= -->
-    <!-- Products Mega Menu -->
-    <div class="products-mega-menu">
-        <div class="menu-left">
-            <button class="menu-tab active" data-target="featured">Featured</button>
-            <button class="menu-tab" data-target="content">Content Creation</button>
-            <button class="menu-tab" data-target="pdf">Acrobat & PDF</button>
-            <button class="menu-tab" data-target="photo">Photography</button>
-            <button class="menu-tab" data-target="video">Video</button>
-            <button class="menu-tab" data-target="design">Design</button>
-            <button class="menu-tab" data-target="marketing">Marketing & Data</button>
-            <a href="products.html" class="all-products-link">All Products ›</a>
-        </div>
-        <div class="menu-right">
-            <div class="cards-wrapper">
-                <!-- Dynamically populated via scripts.js -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Use Cases Menu -->
-    <div class="usecases-menu">
-        <div class="usecases-grid">
-            <div class="usecase-card">
-                <span>Content Creation</span>
-                <h2>Create quickly and easily with AI models.</h2>
-                <p>Generate and edit images, video, and audio with AI.</p>
-                <a href="firefly.html">See Firefly AI ›</a>
-                <button onclick="window.location.href='creative-cloud.html'">Explore</button>
-            </div>
-            <div class="usecase-card">
-                <span>PDF & Document Essentials</span>
-                <h2>Transform PDFs to insights, content, and action.</h2>
-                <p>Edit, sign and convert PDFs.</p>
-                <a href="acrobat.html">See Acrobat ›</a>
-                <button onclick="window.location.href='acrobat.html'">Explore</button>
-            </div>
-            <div class="usecase-card">
-                <span>Students & Teachers</span>
-                <h2>Get special academic pricing on 20+ apps.</h2>
-                <p>Save over 60% on Creative Cloud.</p>
-                <a href="students.html">See student plans ›</a>
-                <button onclick="window.location.href='students.html'">Explore</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Solutions Menu -->
-    <div class="solutions-menu">
-        <div class="solutions-left">
-            <div class="solution-box">
-                <h2>Organizations</h2>
-                <ul>
-                    <li onclick="window.location.href='business.html'">Small businesses</li>
-                    <li onclick="window.location.href='business.html'">Medium and large businesses</li>
-                    <li onclick="window.location.href='students.html'">Schools and universities</li>
-                    <li onclick="window.location.href='business.html'">Government</li>
-                </ul>
-                <button onclick="window.location.href='business.html'">Explore Business</button>
-            </div>
-            <div class="solution-box">
-                <h2>Industries</h2>
-                <ul>
-                    <li onclick="window.location.href='business.html'">Financial services</li>
-                    <li onclick="window.location.href='business.html'">Healthcare</li>
-                    <li onclick="window.location.href='business.html'">Retail & Consumer Goods</li>
-                    <li onclick="window.location.href='business.html'">Media & Entertainment</li>
-                </ul>
-                <button onclick="window.location.href='business.html'">See Case Studies</button>
-            </div>
-        </div>
-        <div class="solution-banner">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Adobe Experience Cloud">
-            <div class="solution-overlay">
-                <h2>Acrobat for Business</h2>
-                <button onclick="window.location.href='business.html'">Explore</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Quick Actions Menu -->
-    <div class="quickactions-menu">
-        <div class="quick-card">
-            <h2>PDF Tools</h2>
-            <ul>
-                <li onclick="window.location.href='acrobat.html'">Edit PDF</li>
-                <li onclick="window.location.href='acrobat.html'">Chat with PDF</li>
-                <li onclick="window.location.href='acrobat.html'">PDF to Word</li>
-                <li onclick="window.location.href='acrobat.html'">Compress PDF</li>
-            </ul>
-            <button onclick="window.location.href='acrobat.html'">View all PDF tools</button>
-        </div>
-        <div class="quick-card">
-            <h2>Photo Tools</h2>
-            <ul>
-                <li onclick="window.location.href='photoshop.html'">Remove background</li>
-                <li onclick="window.location.href='photoshop.html'">Resize image</li>
-                <li onclick="window.location.href='photoshop.html'">Crop image</li>
-                <li onclick="window.location.href='photoshop.html'">Generative Fill</li>
-            </ul>
-            <button onclick="window.location.href='photoshop.html'">View all photo tools</button>
-        </div>
-        <div class="quick-card">
-            <h2>Video Tools</h2>
-            <ul>
-                <li onclick="window.location.href='creative-cloud.html'">Caption video</li>
-                <li onclick="window.location.href='creative-cloud.html'">Change speed</li>
-                <li onclick="window.location.href='creative-cloud.html'">Convert to GIF</li>
-                <li onclick="window.location.href='creative-cloud.html'">Merge video</li>
-            </ul>
-            <button onclick="window.location.href='creative-cloud.html'">View all video tools</button>
-        </div>
-        <div class="quick-card">
-            <h2>Generative AI</h2>
-            <ul>
-                <li onclick="window.location.href='firefly.html'">Generate AI images</li>
-                <li onclick="window.location.href='firefly.html'">Generative Fill</li>
-                <li onclick="window.location.href='firefly.html'">AI Text Effects</li>
-                <li onclick="window.location.href='firefly.html'">AI Vector Recoloring</li>
-            </ul>
-            <button onclick="window.location.href='firefly.html'">View all AI tools</button>
-        </div>
-    </div>
-
-    <!-- Learn & Support Menu -->
-    <div class="learnsupport-menu">
-        <div class="learn-card">
-            <h2>Help & Support</h2>
-            <ul>
-                <li onclick="window.location.href='support.html'">Help Center</li>
-                <li onclick="window.location.href='support.html'">Download & Install</li>
-                <li onclick="window.location.href='support.html'">Manage my Account</li>
-                <li onclick="window.location.href='support.html'">Contact Us</li>
-            </ul>
-            <button onclick="window.location.href='support.html'">Get Help</button>
-        </div>
-        <div class="learn-card">
-            <h2>Learn Tutorials</h2>
-            <ul>
-                <li onclick="window.location.href='firefly.html'">Firefly tutorials</li>
-                <li onclick="window.location.href='acrobat.html'">Acrobat tutorials</li>
-                <li onclick="window.location.href='photoshop.html'">Photoshop tutorials</li>
-                <li onclick="window.location.href='support.html'">Creative Cloud basics</li>
-            </ul>
-            <button onclick="window.location.href='support.html'">Browse Tutorials</button>
-        </div>
-        <div class="learn-card">
-            <h2>Community</h2>
-            <ul>
-                <li onclick="window.location.href='support.html'">App Communities</li>
-                <li onclick="window.location.href='support.html'">Report a bug</li>
-                <li onclick="window.location.href='support.html'">Request a feature</li>
-                <li onclick="window.location.href='support.html'">Adobe Live Events</li>
-            </ul>
-            <button onclick="window.location.href='support.html'">Join Community</button>
-        </div>
-        <div class="learn-card">
-            <h2>Developer & More</h2>
-            <ul>
-                <li onclick="window.location.href='support.html'">Adobe Developer console</li>
-                <li onclick="window.location.href='support.html'">Adobe status portal</li>
-                <li onclick="window.location.href='support.html'">Partner programs</li>
-                <li onclick="window.location.href='support.html'">Adobe Tech blog</li>
-            </ul>
-            <button onclick="window.location.href='support.html'">Developer resources</button>
-        </div>
-    </div>
     </nav>
 
 
