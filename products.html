@@ -2,22 +2,32 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="Explore Adobe Products clone and premium solutions.">
+    <meta name="keywords" content="Adobe, Products, Creative Cloud, Design">
+    <meta name="author" content="Adobe Clone Developer">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobe Products - Creative, Document & Marketing Apps</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
 </head>
 
 <body>
+    <!-- Page Loader Screen -->
+    <div id="loader-wrapper">
+        <div class="loader-spinner"></div>
+        <div class="loader-logo">Adobe</div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
 
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top adobe-navbar py-2 px-4">
@@ -112,7 +122,7 @@
 
                 <!-- Right-side Buttons -->
                 <div class="d-flex align-items-center gap-3">
-                    <a href="signin.html" class="signin-btn">Sign In</a>
+                    <a href="signin.html" class="signin-btn btn-ripple">Sign In</a>
                 </div>
             </div>
         </div>
@@ -120,7 +130,7 @@
 
 
     <!-- ================= BANNER ================= -->
-    <section class="products-banner">
+    <section class="products-banner" data-anim="fade-up">
         <div class="container text-center">
             <h1>Save 50% on Creative Cloud Pro.</h1>
             <p>Get 20+ apps including Photoshop, Illustrator, Premiere Pro, and Acrobat Pro in one powerful package.</p>
@@ -132,7 +142,7 @@
     </section>
 
     <!-- ================= PRODUCTS SECTION ================= -->
-    <section class="all-products-section">
+    <section class="all-products-section" data-anim="fade-up">
         <div class="container">
             <div class="row g-4">
                 <!-- Sidebar -->
@@ -164,7 +174,7 @@
                                 </div>
                                 <p>Create beautiful images, rich graphics, and professional art with top-tier editing software powered by AI.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 2. Illustrator -->
@@ -176,7 +186,7 @@
                                 </div>
                                 <p>Design precise vector graphics, high-resolution logos, brand assets, drawings, and typographic curves.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 3. Premiere Pro -->
@@ -188,7 +198,7 @@
                                 </div>
                                 <p>Professional film and video editing suite with advanced audio ducking, color mode grading, and AI transcribe.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 4. Acrobat Pro -->
@@ -200,7 +210,7 @@
                                 </div>
                                 <p>The complete PDF and document solution. Create, edit, export, legally sign, and merge PDF worksheets.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 5. Adobe Firefly -->
@@ -212,7 +222,7 @@
                                 </div>
                                 <p>Generative AI built for creatives. Generate stunning images, custom vectors, and text textures in seconds.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 6. Lightroom -->
@@ -224,7 +234,7 @@
                                 </div>
                                 <p>Cloud-based photographic service to edit, crop, adjust, organize, and sync your photos across all devices.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 7. After Effects -->
@@ -236,7 +246,7 @@
                                 </div>
                                 <p>Industry-standard cinematic motion graphics software. Create visual effects (VFX) and 3D space animations.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 8. InDesign -->
@@ -248,7 +258,7 @@
                                 </div>
                                 <p>Page design and layout suite for print and digital publishing. Style brochures, books, and interactive slides.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 9. Adobe Express -->
@@ -260,7 +270,7 @@
                                 </div>
                                 <p>Create social banners, flyers, posters, and videos quickly with pre-made templates and Firefly AI features.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 10. Acrobat Reader -->
@@ -272,7 +282,7 @@
                                 </div>
                                 <p>Free application to view, annotate, share, sign, and print PDF worksheets securely on mobile or desktop.</p>
                             </div>
-                            <button class="buy-btn">Free Download</button>
+                            <button class="buy-btn btn-ripple">Free Download</button>
                         </div>
 
                         <!-- 11. Adobe Sign -->
@@ -284,7 +294,7 @@
                                 </div>
                                 <p>Enterprise e-signatures. Request signatures, track approvals, and build automated signature workflows.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 12. Experience Cloud -->
@@ -296,7 +306,7 @@
                                 </div>
                                 <p>Integrated marketing tools to organize content, personalize layout displays, and analyze traffic at scale.</p>
                             </div>
-                            <button class="buy-btn">Contact Sales</button>
+                            <button class="buy-btn btn-ripple">Contact Sales</button>
                         </div>
 
                         <!-- 13. Adobe Analytics -->
@@ -308,7 +318,7 @@
                                 </div>
                                 <p>Derive deep digital insights. Track customer paths and conversions across multiple marketing campaigns.</p>
                             </div>
-                            <button class="buy-btn">Contact Sales</button>
+                            <button class="buy-btn btn-ripple">Contact Sales</button>
                         </div>
 
                         <!-- 14. Adobe Commerce -->
@@ -320,7 +330,7 @@
                                 </div>
                                 <p>Flexible shopping commerce core. Build multi-channel B2B and B2C purchasing stores with headless designs.</p>
                             </div>
-                            <button class="buy-btn">Contact Sales</button>
+                            <button class="buy-btn btn-ripple">Contact Sales</button>
                         </div>
 
                         <!-- 15. FrameMaker -->
@@ -332,7 +342,7 @@
                                 </div>
                                 <p>Authoring tool for long, technical guides. Structure manuals and publish files in XML, PDF, or HTML formats.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                         <!-- 16. RoboHelp -->
@@ -344,14 +354,14 @@
                                 </div>
                                 <p>Publish interactive help portals, policy guides, and knowledgebase search pages smoothly on any device.</p>
                             </div>
-                            <button class="buy-btn">Buy now</button>
+                            <button class="buy-btn btn-ripple">Buy now</button>
                         </div>
 
                     </div>
 
-                    <!-- Show More Container -->
+                    <!-- Show More -->
                     <div class="show-more-container">
-                        <button class="show-more-btn">Show More Apps</button>
+                        <button class="show-more-btn btn-ripple">Show More Apps</button>
                     </div>
                 </div>
             </div>
@@ -359,7 +369,7 @@
     </section>
 
     <!-- ================= FAQ SECTION ================= -->
-    <section class="faq-section">
+    <section class="faq-section" data-anim="fade-up">
         <div class="container" style="max-width: 800px;">
             <h2>Frequently Asked Questions</h2>
             <div class="accordion accordion-flush" id="productsFaq">
@@ -407,7 +417,7 @@
         </div>
     </section>
 
-    <!-- ================= GLOBAL FOOTER ================= -->
+    <!-- ================ FOOTER ================= -->
     <footer class="footer-section">
         <div class="container">
             <div class="footer-grid">
@@ -461,13 +471,15 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- Bootstrap JS Bundle -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JS -->
     <script src="js/scripts.js"></script>
     <script src="js/products.js"></script>
 

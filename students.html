@@ -2,22 +2,32 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="Explore Adobe Students clone and premium solutions.">
+    <meta name="keywords" content="Adobe, Students, Creative Cloud, Design">
+    <meta name="author" content="Adobe Clone Developer">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobe for Education - Student & Teacher Discounts</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/students.css">
 </head>
 
 <body>
+    <!-- Page Loader Screen -->
+    <div id="loader-wrapper">
+        <div class="loader-spinner"></div>
+        <div class="loader-logo">Adobe</div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
 
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top adobe-navbar py-2 px-4">
@@ -112,7 +122,7 @@
 
                 <!-- Right-side Buttons -->
                 <div class="d-flex align-items-center gap-3">
-                    <a href="signin.html" class="signin-btn">Sign In</a>
+                    <a href="signin.html" class="signin-btn btn-ripple">Sign In</a>
                 </div>
             </div>
         </div>
@@ -120,13 +130,13 @@
 
 
     <!-- ================= HERO ================= -->
-    <section class="students-hero">
+    <section class="students-hero" data-anim="fade-up">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 text-center text-lg-start">
                     <h1>Save over 60% on <span>Creative Cloud</span></h1>
                     <p>Unlock access to 20+ applications including Photoshop, Illustrator, Premiere Pro, Acrobat, and more. Fuel your study, portfolio designs, and class work.</p>
-                    <a href="plans.html" class="hero-btn">Start Saving Now</a>
+                    <a href="plans.html" class="hero-btn btn-ripple">Start Saving Now</a>
                 </div>
                 <div class="col-lg-6">
                     <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Students and teachers collaborating" class="img-fluid">
@@ -205,11 +215,11 @@
 
 
     <!-- ================= CALL TO ACTION ================= -->
-    <section class="cta-section">
+    <section class="cta-section" data-anim="fade-up">
         <div class="container">
             <h2>Ready to learn with Adobe?</h2>
             <p>Verification is instant using your school portal login or student email address.</p>
-            <button class="cta-btn" onclick="window.location.href='plans.html'">Join Student Program</button>
+            <button class="cta-btn btn-ripple" onclick="window.location.href='plans.html'">Join Student Program</button>
         </div>
     </section>
 
@@ -269,13 +279,15 @@
     </footer>
 
 
-    <!-- jQuery -->
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- Bootstrap JS Bundle -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 
 </body>

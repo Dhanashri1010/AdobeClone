@@ -1,6 +1,4 @@
-/* ===================================================
-   ADOBE SUPPORT PAGE SPECIFIC CSS
-   =================================================== */
+
 
 .support-hero {
     background: linear-gradient(135deg, #0a1b32 0%, #153b6a 50%, #205c9e 100%);
@@ -34,7 +32,7 @@
 .support-search input {
     width: 100%;
     padding: 16px 25px 16px 55px;
-    border-radius: 40px;
+    border-radius: var(--radius-xl);
     border: none;
     font-size: 16px;
     outline: none;
@@ -80,9 +78,12 @@
 }
 
 .support-card-custom {
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-premium);
     background: #f8f9fa;
     border: 1px solid var(--border-color);
-    border-radius: 20px;
+    border-radius: var(--radius-md);
     padding: 40px 30px;
     height: 100%;
     transition: var(--transition-smooth);
@@ -130,7 +131,7 @@
 
 .accordion-item {
     border: 1px solid var(--border-color);
-    border-radius: 16px !important;
+    border-radius: var(--radius-md) !important;
     overflow: hidden;
     margin-bottom: 15px;
     background: white;

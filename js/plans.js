@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    // ==========================================
-    // DYNAMIC BILLING TOGGLE (MONTHLY VS ANNUAL)
-    // ==========================================
+  
+    // (MONTHLY VS ANNUAL)
+    
     $("#billingToggle").on("change", function() {
         let isAnnual = $(this).is(":checked");
         
@@ -9,7 +9,7 @@ $(document).ready(function() {
             $("#monthlyLabel").removeClass("active");
             $("#annualLabel").addClass("active");
             
-            // Set annual pricing text (discounted)
+            // Set annual pricing(discounted)
             $("#individualPrice").html("₹639 <span>/ mo</span>");
             $("#allAppsPrice").html("₹1,279 <span>/ mo</span>");
             $("#studentPrice").html("₹519 <span>/ mo</span>");

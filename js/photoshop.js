@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    // ==========================================
-    // BEFORE/AFTER SLIDER INTERACTION
-    // ==========================================
+   
+    // BEFORE/AFTER SLIDER
+    
     $(".slider-bar").on("input change", function() {
         let sliderVal = $(this).val();
         $(".image-overlay").css("width", sliderVal + "%");

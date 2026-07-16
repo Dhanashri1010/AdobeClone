@@ -1,10 +1,4 @@
-/* ===================================================
-   ADOBE PRODUCTS PAGE SPECIFIC CSS
-   =================================================== */
 
-/* ==========================
-   BANNER SECTION
-   ========================== */
 .products-banner {
     padding: 90px 20px;
     background: linear-gradient(135deg, #d7e8ff 0%, #f6d8ff 100%);
@@ -43,9 +37,11 @@
 }
 
 .products-sidebar {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-premium);
     background: white;
     padding: 25px;
-    border-radius: 18px;
+    border-radius: var(--radius-md);
     position: sticky;
     top: 100px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -69,7 +65,7 @@
 
 .products-sidebar li {
     padding: 12px 16px;
-    border-radius: 12px;
+    border-radius: var(--radius-sm);
     margin-bottom: 8px;
     cursor: pointer;
     font-size: 14px;
@@ -98,8 +94,11 @@
 }
 
 .product-card {
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-premium);
     background: white;
-    border-radius: 20px;
+    border-radius: var(--radius-md);
     padding: 30px;
     min-height: 250px;
     transition: var(--transition-smooth);
@@ -127,7 +126,7 @@
     font-size: 24px;
     width: 48px;
     height: 48px;
-    border-radius: 12px;
+    border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +168,7 @@
     background: var(--adobe-blue);
     color: white;
     padding: 10px 24px;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     font-weight: 700;
     font-size: 13.5px;
     cursor: pointer;
@@ -197,7 +196,7 @@
     border: 1.5px solid var(--text-primary);
     color: var(--text-primary);
     padding: 12px 30px;
-    border-radius: 30px;
+    border-radius: var(--radius-xl);
     font-weight: 700;
     font-size: 14.5px;
     transition: var(--transition-smooth);
@@ -256,6 +255,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .products-sidebar {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-premium);
         margin-bottom: 30px;
         position: relative;
         top: 0;

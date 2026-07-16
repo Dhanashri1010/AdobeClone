@@ -1,6 +1,3 @@
-/* ===================================================
-   ADOBE CREATIVE CLOUD PAGE SPECIFIC CSS
-   =================================================== */
 
 .cc-hero {
     background: linear-gradient(135deg, #090613 0%, #150b28 50%, #220e3a 100%);
@@ -48,7 +45,7 @@
 }
 
 .cc-hero img {
-    border-radius: 16px;
+    border-radius: var(--radius-md);
     box-shadow: 0 20px 45px rgba(0,0,0,0.5);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -76,8 +73,11 @@
 }
 
 .app-card {
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-premium);
     background: #f8f9fa;
-    border-radius: 20px;
+    border-radius: var(--radius-md);
     padding: 35px;
     border: 1px solid var(--border-color);
     transition: var(--transition-smooth);
@@ -122,7 +122,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* App Logo Colors matching original Adobe */
+/* App Logo Colors*/
 .icon-ps { background: #001e36; color: #00c8ff; border: 1.5px solid #00c8ff; }
 .icon-ai { background: #261300; color: #ff9a00; border: 1.5px solid #ff9a00; }
 .icon-pr { background: #15002b; color: #ea77ff; border: 1.5px solid #ea77ff; }
@@ -137,8 +137,11 @@
 }
 
 .benefit-card {
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-premium);
     background: white;
-    border-radius: 20px;
+    border-radius: var(--radius-md);
     padding: 40px;
     height: 100%;
     border: 1px solid var(--border-color);
@@ -171,8 +174,11 @@
 }
 
 .plan-card-cc {
+    border-radius: var(--radius-lg);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-premium);
     background: white;
-    border-radius: 24px;
+    border-radius: var(--radius-lg);
     padding: 40px;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-premium);

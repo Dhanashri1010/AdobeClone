@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="Explore Adobe Signin clone and premium solutions.">
+    <meta name="keywords" content="Adobe, Signin, Creative Cloud, Design">
+    <meta name="author" content="Adobe Clone Developer">
+
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +19,19 @@
 </head>
 
 <body>
+    <!-- Page Loader Screen -->
+    <div id="loader-wrapper">
+        <div class="loader-spinner"></div>
+        <div class="loader-logo">Adobe</div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
 
 <section class="signin-section">
 
-<div class="signin-container">
+<div class="signin-container" data-anim="zoom-in">
 
 <div class="logo">
 
@@ -77,7 +90,7 @@ Forgot Password?
 </div>
 
 <button type="submit"
-class="signin-btn">
+class="signin-btn btn-ripple">
 
 Sign In
 
@@ -93,13 +106,13 @@ Sign In
 
 <div class="social-login">
 
-<button class="google-btn">
+<button class="google-btn btn-ripple">
 
 Google
 
 </button>
 
-<button class="facebook-btn">
+<button class="facebook-btn btn-ripple">
 
 Facebook
 
@@ -121,7 +134,12 @@ Create Account
 
 </section>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 
 <script src="js/signin.js"></script>
 

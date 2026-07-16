@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobe - Creative, Marketing and Document Solutions</title>
+    <meta name="description" content="Explore Adobe's industry-leading software and solutions including Photoshop, Acrobat, Firefly Generative AI, and Creative Cloud applications for design and documents.">
+    <meta name="keywords" content="Adobe, Photoshop, Acrobat, Firefly AI, Creative Cloud, Design Software, Document Editor">
+    <meta name="author" content="Adobe Clone Developer">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Custom CSS -->
+    <!-- Main Style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Page Loader Screen -->
+    <div id="loader-wrapper">
+        <div class="loader-spinner"></div>
+        <div class="loader-logo">Adobe</div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
 
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top adobe-navbar py-2 px-4">
         <div class="container-fluid">
-            <!-- Brand Logo -->
+            <!--Brand Logo -->
             <a href="index.html" class="adobe-logo-container">
                 <svg width="24" height="21" viewBox="0 0 91 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M56.9686 0H90.4318V80L56.9686 0Z" fill="#FA0F00"/>
@@ -111,7 +120,7 @@
 
                 <!-- Right-side Buttons -->
                 <div class="d-flex align-items-center gap-3">
-                    <a href="signin.html" class="signin-btn">Sign In</a>
+                    <a href="signin.html" class="signin-btn btn-ripple">Sign In</a>
                 </div>
             </div>
         </div>
@@ -124,13 +133,13 @@
             <div class="carousel-inner">
                 <!-- Slide 1: Acrobat -->
                 <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80" class="hero-img" alt="Adobe Acrobat Solutions">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" class="hero-img" alt="Adobe Acrobat Solutions">
                     <div class="overlay"></div>
                     <div class="hero-content">
                         <h6>Adobe Acrobat</h6>
                         <h1>PDF and document essentials.</h1>
                         <p>Create, edit, sign, and share documents from anywhere. Transform your static files into collaborative, insight-rich documents.</p>
-                        <button class="hero-btn" onclick="window.location.href='acrobat.html'">Learn More</button>
+                        <button class="hero-btn btn-ripple" onclick="window.location.href='acrobat.html'">Learn More</button>
                     </div>
                 </div>
 
@@ -142,7 +151,7 @@
                         <h6>Creative Cloud</h6>
                         <h1>Creativity and design for everyone.</h1>
                         <p>Get 20+ desktop and mobile apps including Photoshop, Illustrator, Premiere Pro, and more. Make anything you can imagine.</p>
-                        <button class="hero-btn" onclick="window.location.href='creative-cloud.html'">Explore CC Apps</button>
+                        <button class="hero-btn btn-ripple" onclick="window.location.href='creative-cloud.html'">Explore CC Apps</button>
                     </div>
                 </div>
 
@@ -154,7 +163,7 @@
                         <h6>Adobe Firefly</h6>
                         <h1>Generative AI, purpose-built for creators.</h1>
                         <p>Generate beautiful images, text effects, and color palettes in seconds using simple text prompts. Safe for commercial use.</p>
-                        <button class="hero-btn" onclick="window.location.href='firefly.html'">Create with Firefly</button>
+                        <button class="hero-btn btn-ripple" onclick="window.location.href='firefly.html'">Create with Firefly</button>
                     </div>
                 </div>
 
@@ -166,7 +175,7 @@
                         <h6>Adobe Experience Cloud</h6>
                         <h1>Delivering personalized customer journeys.</h1>
                         <p>Adobe Experience Cloud provides marketing, commerce, and analytics tools to personalize content at scale and drive enterprise growth.</p>
-                        <button class="hero-btn" onclick="window.location.href='business.html'">Get Started</button>
+                        <button class="hero-btn btn-ripple" onclick="window.location.href='business.html'">Get Started</button>
                     </div>
                 </div>
 
@@ -178,13 +187,13 @@
                         <h6>Students & Teachers</h6>
                         <h1>Save over 60% on all apps.</h1>
                         <p>Bring your academic and personal projects to life with Adobe Creative Cloud. Access industry-standard tools at a student price.</p>
-                        <button class="hero-btn" onclick="window.location.href='students.html'">Get Special Discount</button>
+                        <button class="hero-btn btn-ripple" onclick="window.location.href='students.html'">Get Special Discount</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Sync indicators (bottom cards) -->
+        <!-- bottom cards-->
         <div class="bottom-cards d-none d-lg-flex">
             <div class="slide-card active-card" data-slide="0">
                 PDF and document essentials
@@ -207,17 +216,17 @@
     <!-- ================= EVERYTHING SECTION ================= -->
     <section class="everything-section">
         <div class="container">
-            <div class="section-title text-center">
+            <div class="section-title text-center" data-anim="fade-up">
                 <h2>Everything you need to make anything.</h2>
                 <p>Whether you're a student, social influencer, creative professional, performance marketer, or global brand, Adobe has the apps you need to bring your vision to life.</p>
             </div>
 
             <div class="row g-4 mt-4 justify-content-center">
                 <!-- Card 1 -->
-                <div class="col-lg-2-4 col-md-6 col-sm-12">
+                <div class="col-lg-2-4 col-md-6 col-sm-12" data-anim="zoom-in">
                     <div class="adobe-card" onclick="window.location.href='creative-cloud.html'">
                         <div class="card-header-custom">
-                            🎨 Creativity and design
+                            Creativity and design
                         </div>
                         <img src="https://images.unsplash.com/photo-1541462608141-2ff580dd0e4e?auto=format&fit=crop&w=500&q=80" class="card-img-custom" alt="Creativity and design overview">
                         <div class="card-body-custom">
@@ -228,10 +237,10 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-lg-2-4 col-md-6 col-sm-12">
+                <div class="col-lg-2-4 col-md-6 col-sm-12" data-anim="zoom-in">
                     <div class="adobe-card" onclick="window.location.href='firefly.html'">
                         <div class="card-header-custom">
-                            🔥 Content creation
+                            Content creation
                         </div>
                         <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=500&q=80" class="card-img-custom" alt="Generate stunning content">
                         <div class="card-body-custom">
@@ -242,10 +251,10 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-lg-2-4 col-md-6 col-sm-12">
+                <div class="col-lg-2-4 col-md-6 col-sm-12" data-anim="zoom-in">
                     <div class="adobe-card" onclick="window.location.href='acrobat.html'">
                         <div class="card-header-custom">
-                            📄 PDF and documents
+                            PDF and documents
                         </div>
                         <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=500&q=80" class="card-img-custom" alt="PDF and documents">
                         <div class="card-body-custom">
@@ -256,10 +265,10 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-lg-2-4 col-md-6 col-sm-12">
+                <div class="col-lg-2-4 col-md-6 col-sm-12" data-anim="zoom-in">
                     <div class="adobe-card" onclick="window.location.href='business.html'">
                         <div class="card-header-custom">
-                            🏢 Adobe for Business
+                            Adobe for Business
                         </div>
                         <img src="https://images.unsplash.com/photo-1552581230-c013741398c3?auto=format&fit=crop&w=500&q=80" class="card-img-custom" alt="Adobe for Business card">
                         <div class="card-body-custom">
@@ -270,10 +279,10 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="col-lg-2-4 col-md-6 col-sm-12">
+                <div class="col-lg-2-4 col-md-6 col-sm-12" data-anim="zoom-in">
                     <div class="adobe-card" onclick="window.location.href='students.html'">
                         <div class="card-header-custom">
-                            🎓 Students and teachers
+                            Students and teachers
                         </div>
                         <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=500&q=80" class="card-img-custom" alt="Students and teachers">
                         <div class="card-body-custom">
@@ -290,13 +299,13 @@
     <!-- ================= EXPLORE WHAT'S NEW ================= -->
     <section class="explore-section">
         <div class="container">
-            <div class="explore-heading text-center">
+            <div class="explore-heading text-center" data-anim="fade-up">
                 <span>Features and Releases</span>
                 <h2>Explore what's new.</h2>
                 <p>Discover the latest product features and enhancements from Adobe.</p>
             </div>
 
-            <div class="explore-card" onclick="window.location.href='creative-cloud.html'">
+            <div class="explore-card" onclick="window.location.href='creative-cloud.html'" data-anim="fade-up">
                 <div class="explore-image">
                     <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80" alt="Premiere Pro video editing">
                 </div>
@@ -315,7 +324,7 @@
         <div class="container">
             <div class="row g-4">
                 <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-anim="fade-right">
                     <div class="feature-card" onclick="window.location.href='acrobat.html'">
                         <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=600&q=80" class="feature-img" alt="Acrobat AI Assistant">
                         <div class="feature-content">
@@ -327,7 +336,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-anim="fade-up">
                     <div class="feature-card" onclick="window.location.href='firefly.html'">
                         <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=600&q=80" class="feature-img" alt="AI art in Firefly">
                         <div class="feature-content">
@@ -339,7 +348,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="col-lg-4 col-md-12 col-sm-12" data-anim="fade-left">
                     <div class="feature-card" onclick="window.location.href='photoshop.html'">
                         <img src="https://images.unsplash.com/photo-1541462608141-2ff580dd0e4e?auto=format&fit=crop&w=600&q=80" class="feature-img" alt="Photoshop image blend">
                         <div class="feature-content">
@@ -356,7 +365,7 @@
 
     <!-- ================= TESTIMONIAL SECTION ================= -->
     <section class="testimonial-section">
-        <div class="container">
+        <div class="container" data-anim="zoom-in">
             <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
@@ -421,10 +430,26 @@
     <section class="tools-section">
         <div class="tools-overlay"></div>
         <div class="container">
-            <div class="tools-heading text-center">
+            <div class="tools-heading text-center" data-anim="fade-up">
                 <h2>Tools that work for you.</h2>
                 <p>Bring any idea to life with products designed for creators, businesses, and everyone in between.</p>
-                <button class="tools-btn" onclick="window.location.href='products.html'">See all products</button>
+                <button class="tools-btn btn-ripple" onclick="window.location.href='products.html'">See all products</button>
+            </div>
+
+            <!-- Stats Counters -->
+            <div class="row text-center text-white my-5 counter-section justify-content-center g-4" data-anim="fade-up">
+                <div class="col-6 col-md-3">
+                    <h3 class="counter-value display-5 fw-bold" data-count="20" data-append="+">0</h3>
+                    <p class="text-muted text-uppercase small" style="letter-spacing: 1px; font-size: 11px;">Creative Apps</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="counter-value display-5 fw-bold" data-count="10" data-append="M+">0</h3>
+                    <p class="text-muted text-uppercase small" style="letter-spacing: 1px; font-size: 11px;">Active Users</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="counter-value display-5 fw-bold" data-count="100" data-append="B+">0</h3>
+                    <p class="text-muted text-uppercase small" style="letter-spacing: 1px; font-size: 11px;">AI Generations</p>
+                </div>
             </div>
 
             <div class="tools-grid mt-4">
@@ -486,7 +511,7 @@
     </section>
 
 
-    <!-- ================= GLOBAL FOOTER ================= -->
+    <!-- =============== FOOTER ================= -->
     <footer class="footer-section">
         <div class="container">
             <div class="footer-grid">
@@ -541,13 +566,11 @@
     </footer>
 
 
-    <!-- jQuery -->
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 
 </body>
