@@ -196,7 +196,90 @@ margin-top:25px;
 
 .signup-text a{
 
-text-decoration:none;
-
 font-weight:600;
+}
+
+/* ==========================================
+   PASSWORD SHOW/HIDE & VALIDATION STYLING
+   ========================================== */
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-wrapper input {
+    padding-right: 48px !important;
+}
+
+.toggle-password-btn {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.toggle-password-btn:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.toggle-password-btn:active {
+    transform: scale(0.95);
+}
+
+.error-message {
+    color: #fa0f00; /* Adobe Red */
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 6px;
+    display: none;
+    animation: fadeInError 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeInError {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input.is-invalid {
+    border-color: #fa0f00 !important;
+    box-shadow: 0 0 0 3px rgba(250, 15, 0, 0.2) !important;
+}
+
+.form-group input.is-valid {
+    border-color: #2ecc71 !important; /* Beautiful green for validation success */
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15) !important;
+}
+
+/* Spinner and Disabled State on Submit */
+.signin-btn:disabled {
+    background-color: rgba(20, 115, 230, 0.6) !important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn-spinner {
+    vertical-align: middle;
 }
